@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="User Checkout & Registration Hub">
+        <title>User Checkout & Registration Hub</title>
+    </head>
+    <body>
+        <h1>Welcome to the User Registration & Checkout Hub</h1>
+        <p>Please fill out the form below to register or checkout.</p>
+        <br>
+        <hr>
+        <h2>Register Here</h2>
+         <form action="Registration_URL" method="POST">
+            <fieldset>
+                <legend>Registration Information</legend>
+                <br>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" pattern="[a-z0-9_]{4,16}" required>
+                <br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" pattern="[a-z0-9_]{4,16}" required>
+                <br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>  
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                <label for="nationality">Nationality:</label>
+                <select name="nationality" required>
+                    <option value="pakistan">Pakistani</option>
+                    <option value="american">American</option>
+                    <option value="british">British</option>
+                    <option value="canadian">Canadian</option>
+                    <option value="australian">Australian</option>
+                </select>
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" pattern="[a-z0-9_]{4,16}"required>
+                <br>
+                <label for="interests">Interests:</label><br>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label><br>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="traveling" name="interests" value="traveling">
+                <label for="traveling">Traveling</label><br>
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                <label for="gaming">Gaming</label>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="phone_number">Phone No. :</label>
+                <input type="tel" id="phone_number" name="phone_number" maxlength="12" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <br>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>   
+                <br>
+                <br>
+                
+                <label for="submit">Submit your Form:</label>
+                <input type="submit" value="Submit">  
+            </fieldset>
+        </form>
+
+        <br>
+        <hr>
+        
+        <h2>Our Collection</h2>
+        <p>Explore our exclusive collection of products. Add your favorite items to the cart and proceed to checkout.</p>
+        <br>
+        <table border="1" cellpadding="40" cellspacing="10">
+           <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+          
+        <br>
+        <hr>
+
+        <h2>Checkout</h2>
+        <p>Review your selected items and proceed to checkout. Ensure all your details are correct. </p>
+        <p>Done with your shopping? <br><a href="#checkout">Checkout Here.</a></p>
+        
+        <section id="checkout">
+            <h2>Checkout Form</h2>
+
+            <form action="Checkout_URL" method="POST">
+                <fieldset>
+                <legend>Checkout Details</legend>
+                <br>
+                <label for="card_number">Card Number:</label>
+                <input type="text" id="card_number" name="card_number" pattern="[0-9]{16}" required>
+                <br>
+                <label for="expiry_date">Expiry Date:</label>
+                <input type="date" id="expiry_date" name="expiry_date" required>
+                <br>
+                <label for="cvv">CVV:   </label>
+                <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" required>
+                <br>
+                <label for="submit">Submit Here:</label>
+                <input type="submit" value="Submit"> 
+                <br>
+                </fieldset>
+            </form>
+        </section>
+
+    </body>
+     <footer>
+            <p>&copy; 2026 Registration & Checkout Form. All rights reserved.</p>   
+    </footer>
+</html>
